@@ -18,7 +18,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=19782003
   java-app:
-    build: .
+    image: "abdumalik007/task-management:2.0"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/task
       - SPRING_DATASOURCE_USERNAME=postgres
